@@ -3,22 +3,38 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
-subtitle: ''
-description: ''
-keywords:
-author: John Doe
+title:  Gengxr's Blog
+subtitle: Art is a lie that tells us truth.
+header-img: img/cat.jpg
+email: e0321294@u.nus.edu
+description: " Welcome to Xingri Geng's Blog " 
+keywords: "Python, C/C++; Machine Learning Engeineer"
+author: Xingri Geng
 language: en
-timezone: ''
+timezone: UTC
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: https://gengxingri.github.io/
+url: https://gengxr.github.io/
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 pretty_urls:
   trailing_index: true # Set to false to remove trailing 'index.html' from permalinks
   trailing_html: true # Set to false to remove trailing '.html' from permalinks
+
+
+# Publish posts or collection documents with a future date.
+future: true
+
+
+# SNS settings
+RSS: false
+
+zhihu_username: chenmoquxijing
+github_username: brucegeng66
+twitter_username: Bruce
+#facebook_username:  huxpro
+linkedin_username:  xingri-geng
 
 # Directory
 source_dir: source
@@ -40,9 +56,9 @@ external_link:
   exclude: ''
 filename_case: 0
 render_drafts: false
-post_asset_folder: false
+post_asset_folder: true
 relative_link: false
-future: true
+
 highlight:
   enable: true
   line_number: true
@@ -70,6 +86,10 @@ default_category: uncategorized
 category_map:
 tag_map:
 
+
+
+
+
 # Metadata elements
 ## https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta
 meta_generator: true
@@ -96,13 +116,26 @@ ignore:
 
 # Extensions
 ## Plugins: https://hexo.io/plugins/
+
+#RSS订阅
+plugin:
+- hexo-generator-feed
+#Feed Atom
+feed:
+  type: atom
+  path: atom.xml
+  limit: 20
+
+
+
 ## Themes: https://hexo.io/themes/
-theme: landscape
+# theme: landscape
+theme: hexo-theme-hueman-master
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: git 
-  repo: git@github.com:gengxingri/gengxingri.github.io.git
+  repo: git@github-bruce:brucegeng66/gengxr.github.io.git
   branch: master
   message: add new blog
