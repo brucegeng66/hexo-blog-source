@@ -15,7 +15,7 @@ timezone: UTC
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: https://gengxr.github.io/
+url: https://brucegeng66.github.io/
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 pretty_urls:
@@ -137,5 +137,5 @@ theme: hexo-theme-hueman-master
 deploy:
   type: git 
   repo: git@github-bruce:brucegeng66/gengxr.github.io.git
-  branch: master
+  branch: gh-pages
   message: add new blog
